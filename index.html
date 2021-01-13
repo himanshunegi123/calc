@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        body {
+            background-image: linear-gradient(to right, #1af7c7, #e40d17);
+        }
+        .cal {
+            width:390px;
+            height:550px;
+            margin-left:500px;
+            border:none;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #d3e814;
+            margin-top:20px; 
+        }
+        #screen {
+            width:370px;
+            height:70px;
+            margin:10px;
+            margin-right:10px;
+            background-color: white;
+            border:none;
+            border-radius: 5px;
+            float:left;
+            padding-top:5px;
+            padding-bottom:5px;
+            font-size:30px;
+
+        }
+        button {
+            width:70px;
+            height:50px;
+            margin:8px;
+            cursor: pointer;
+            font-size: 30px;
+            border:none;
+        }
+        button:hover {
+            background-color: rgb(219, 251, 156);
+            border:none;
+        }
+        #clear {
+            margin-top:10px;
+            width:350px;
+            height:50px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="cal">
+        <h1 style="padding-top:20px;">Calculator</h1>
+        <input id="screen" type="text" name="name" readonly="">
+        <button id="a9" onclick="click12('9')">9</button>
+        <button id="a8" onclick="click12('8')">8</button>
+        <button id="a7" onclick="click12('7')">7</button>
+        <button id="a+" onclick="click12('+')">+</button><br>
+        <button id="a6" onclick="click12('6')">6</button>
+        <button id="a5" onclick="click12('5')">5</button>
+        <button id="a4" onclick="click12('4')">4</button>
+        <button id="a-" onclick="click12('-')">-</button><br>
+        <button id="a3" onclick="click12('3')">3</button>
+        <button id="a2" onclick="click12('2')">2</button>
+        <button id="a1" onclick="click12('1')">1</button>
+        <button id="a*" onclick="click12('*')">*</button><br>
+        <button id="ad" onclick="click12('.')">.</button>
+        <button id="a0" onclick="click12('0')">0</button>
+        <button id="a/" onclick="click12('/')">/</button>
+        <button id="a=" onclick="answer()">=</button><br>
+        <button id="clear" onclick="clear12()">clear</button>
+
+        </div>
+    </div>
+
+<script src="cal.js">
+
+</script>
+
+
+</body>
+</html>
